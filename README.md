@@ -1,0 +1,1 @@
+This is a project to create my portfolio website. As at start, the tech stack used is HTML5, CSS3 and Javascript.
