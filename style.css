@@ -73,22 +73,36 @@ li > a:active {
 }
 
 .hamburger {
-  display: flex;
-  align-items: center;
-  font-size: 60px;
-  color: #fffeff;
-  padding: 5px;
-  border-radius: 5px;
   display: none;
 }
 
 @media (max-width: 767px) {
   .hamburger {
     display: flex;
+    align-items: center;
+    font-size: 60px;
+    color: #fffeff;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    height: -webkit-fill-available;
   }
 
   .menu {
     display: none;
+    position: absolute;
+    top: 80px;
+    left: -15px;
+    height: fit-content;
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    gap: 35px;
+    align-items: flex-start;
+    width: inherit;
   }
 
   .logo {
@@ -103,5 +117,9 @@ li > a:active {
 
   .menu-list {
     flex-direction: column;
+  }
+
+  .show {
+    display: flex;
   }
 }
