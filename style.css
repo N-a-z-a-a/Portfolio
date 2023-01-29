@@ -1,6 +1,6 @@
 * {
   font-family: "Comfortaa", cursive;
-  background-color: #212121;
+  background-color: #222222;
 }
 
 a {
@@ -76,6 +76,175 @@ li > a:active {
   display: none;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px 100px;
+}
+
+.name {
+  margin-top: 135px;
+}
+
+.name > span {
+  font-weight: 900;
+  font-size: 70px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.deets {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 250px;
+}
+
+.title {
+  color: #eb6e51;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.stack {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.desc {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 75%;
+}
+
+.spans {
+  color: #eb6e51;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.image {
+  margin-left: -50px;
+  margin-top: -20px;
+  /* margin-top: -20px; */
+  z-index: 1000;
+  position: relative;
+  background: transparent;
+}
+
+.joy {
+  margin-left: 133px;
+}
+
+section {
+  background-color: #1f1f1f !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: 40px 50px; */
+  gap: 50px;
+  margin-top: -300px;
+  z-index: 1000;
+  position: relative;
+  height: 500px;
+  padding: 80px 120px;
+}
+
+section > * {
+  background: transparent;
+}
+
+.sec-1 > *,
+.sec-2 > * {
+  background-color: transparent;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #eb6e51;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+}
+
+.about > span {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 3px;
+}
+
+.second-hr {
+  width: 10%;
+  margin-left: inherit;
+  border: 1px solid #eb6e51;
+}
+
+.lorem {
+  font-size: 32px;
+  color: white;
+  font-weight: 800;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+}
+
+.p {
+  font-size: 14px;
+  line-height: 2;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+}
+
+.yoe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.num {
+  font-size: 120px;
+  font-weight: 800;
+  color: #eb6e51;
+}
+
+.exp {
+  font-size: 40px;
+  color: white;
+}
+
+.query {
+  font-size: 45px;
+  color: white;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.talk {
+  font-size: 20px;
+}
+
+.contact {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact > p {
+  font-size: 24px;
+  color: #eb6e51;
+  text-decoration: underline;
+}
+
+.contact > span {
+  font-size: 34px;
+  color: #eb6e51;
+  text-decoration: underline;
+}
 @media (max-width: 767px) {
   .hamburger {
     display: flex;
