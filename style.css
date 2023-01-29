@@ -3,6 +3,10 @@
   background-color: #222222;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -205,6 +209,10 @@ section > * {
   gap: 10px;
 }
 
+.yoe > * {
+  background: transparent;
+}
+
 .num {
   font-size: 120px;
   font-weight: 800;
@@ -245,6 +253,7 @@ section > * {
   color: #eb6e51;
   text-decoration: underline;
 }
+
 @media (max-width: 767px) {
   .hamburger {
     display: flex;
@@ -290,5 +299,85 @@ section > * {
 
   .show {
     display: flex;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .name {
+    margin-top: 25px;
+  }
+
+  .name > span {
+    font-size: 50px;
+  }
+
+  .joy {
+    margin-left: 0;
+  }
+
+  .image {
+    margin-left: 15px;
+    margin-top: -80px;
+    /* margin-right: -20px; */
+  }
+
+  .deets {
+    margin-top: -160px;
+    padding: 30px 0;
+    z-index: 1000;
+  }
+
+  .stack {
+    font-size: 26px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    height: max-content;
+    margin-top: 0;
+  }
+
+  .lorem {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  .p {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .num {
+    font-size: 80px;
+  }
+
+  .exp {
+    font-size: 28px;
+  }
+
+  .query {
+    font-size: 28px;
+    margin-top: 0;
+  }
+
+  .contact {
+    margin-top: 55px;
+  }
+
+  .contact > p {
+    background: transparent;
+    font-size: 18px;
+  }
+
+  .contact > span {
+    background: transparent;
+    font-size: 20px;
   }
 }
