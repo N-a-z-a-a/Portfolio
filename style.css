@@ -142,20 +142,20 @@ header {
   margin-left: 133px;
 }
 
-section {
+.first {
   background-color: #1f1f1f !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* margin: 40px 50px; */
   gap: 50px;
-  margin-top: -300px;
+  margin-top: -45px;
   z-index: 1000;
   position: relative;
   height: 500px;
   padding: 80px 120px;
 }
 
-section > * {
+.first > * {
   background: transparent;
 }
 
@@ -254,6 +254,82 @@ section > * {
   text-decoration: underline;
 }
 
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 200px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.services > span {
+  color: #eb6e51;
+  text-decoration: underline;
+  letter-spacing: 1;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.services > h2 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  /* border: 1px solid white; */
+  height: 380px;
+}
+
+.skill > p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.skill > h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.skill:hover,
+.skill:hover > * {
+  background-color: black;
+}
+
+.skill:hover {
+  /* border: 25px solid #222222;
+  border-right-style: outset;
+  border-right-color: #eb6e51;
+  border-bottom-style: outset;
+  border-bottom-color: #eb6e51; */
+  box-shadow: 20px 20px 0px #eb6e51;
+  margin: 0 20px;
+}
+
+.fa {
+  font-size: 70px;
+  color: #eb6e51;
+}
+
 @media (max-width: 767px) {
   .hamburger {
     display: flex;
@@ -335,7 +411,7 @@ section > * {
     font-size: 26px;
   }
 
-  section {
+  .first {
     display: flex;
     flex-direction: column;
     padding: 30px 40px;
