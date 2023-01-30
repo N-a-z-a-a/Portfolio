@@ -268,6 +268,7 @@ header {
   justify-content: center;
   gap: 20px;
   padding-top: 30px;
+  width: 1200px;
 }
 
 .services > span {
@@ -293,7 +294,8 @@ header {
   justify-content: center;
   gap: 40px;
   /* border: 1px solid white; */
-  height: 380px;
+  padding: 20px;
+  height: 320px;
 }
 
 .skill > p {
@@ -328,6 +330,54 @@ header {
 .fa {
   font-size: 70px;
   color: #eb6e51;
+}
+
+.tech {
+  background-color: #1f1f1f !important;
+}
+
+.tech > * {
+  background: transparent;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.html5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.html5,
+.html5 > * {
+  background: transparent;
+}
+
+.html5 > span {
+  color: white;
+  font-weight: 700;
+}
+
+.html {
+  padding: 30px;
+  border: 10px solid #eb6e51;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 32px;
 }
 
 @media (max-width: 767px) {
