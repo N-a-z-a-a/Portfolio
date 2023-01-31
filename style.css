@@ -87,7 +87,7 @@ header {
 }
 
 .name {
-  margin-top: 135px;
+  margin-top: 100px;
 }
 
 .name > span {
@@ -479,6 +479,35 @@ header {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #1f1f1f;
+}
+
+form > * {
+  padding: 25px;
+  border: none;
+}
+
+input[placeholder*="Your"],
+textarea {
+  color: white;
+  font-size: 16px;
+  background-color: #363636;
+}
+
+.submit {
+  width: 40%;
+  padding: 20px 10px;
+  color: white;
+  font-size: 16px;
+  background-color: #eb6e51;
 }
 
 @media (max-width: 767px) {
