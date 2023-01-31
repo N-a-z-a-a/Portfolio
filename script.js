@@ -27,7 +27,6 @@ window.onclick = function (e) {
 };
 
 const skills = document.querySelectorAll(".skill");
-
 for (let skill of skills) {
   skill.addEventListener("mouseover", (e) => {
     e.currentTarget.lastChild.previousSibling.innerText = "- Discuss Now -";
