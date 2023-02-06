@@ -32,6 +32,6 @@ for (let skill of skills) {
     e.currentTarget.lastChild.previousSibling.innerText = "- Discuss Now -";
   });
   skill.addEventListener("mouseout", (e) => {
-    e.currentTarget.lastChild.previousSibling.innerText = "--";
+    e.currentTarget.lastChild.previousSibling.innerHTML = "&#8212; &#8212;";
   });
 }
