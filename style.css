@@ -101,7 +101,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .title {
@@ -542,6 +542,10 @@ textarea {
   background-color: #eb6e51;
 }
 
+.second {
+  display: none;
+}
+
 @media (max-width: 320px) {
   .name > span {
     font-size: 50px;
@@ -841,5 +845,138 @@ textarea {
 
   .second-hr {
     width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1410px) {
+  nav,
+  header,
+  .first,
+  .services {
+    width: unset !important;
+  }
+
+  .skills,
+  .tech-stack,
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  header {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0 30px;
+  }
+
+  .name {
+    margin-top: 30px;
+  }
+
+  .name > span {
+    font-size: 41px;
+  }
+
+  .joy {
+    margin-left: 2px;
+  }
+
+  .image {
+    margin-left: -20px;
+  }
+
+  .deets {
+    margin-top: 10px;
+  }
+
+  .about {
+    margin-bottom: 15px;
+  }
+
+  .stack {
+    font-size: 24px;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .first {
+    padding: 40px 20px;
+    height: auto;
+    background-color: darkslategray;
+    margin-top: 0;
+  }
+
+  .second {
+    display: block;
+    color: #eb6e51;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .spans {
+    display: none;
+  }
+
+  .lorem {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .query {
+    font-size: 28px;
+  }
+
+  .p {
+    line-height: 1.5;
+  }
+
+  .contact {
+    margin-top: 50px;
+  }
+
+  .num {
+    font-size: 85px;
+  }
+
+  .exp {
+    font-size: 32px;
+  }
+
+  .services {
+    padding: 70px 50px;
+  }
+
+  .skills {
+    width: unset;
+  }
+
+  .skill > h3 {
+    font-size: 40px;
+  }
+
+  .skill > p {
+    font-size: 24px;
+  }
+
+  .tech {
+    padding-bottom: 230px;
+  }
+
+  .works {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: unset;
+  }
+
+  .house {
+    width: 100%;
+    padding: 30px 0;
   }
 }
