@@ -10,6 +10,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .flex {
@@ -544,6 +545,10 @@ textarea {
 
 .second {
   display: none;
+}
+
+.mail:hover {
+  color: #eb6e51;
 }
 
 @media (max-width: 320px) {

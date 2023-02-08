@@ -25,14 +25,3 @@ window.onclick = function (e) {
     }
   }
 };
-
-const skills = document.querySelectorAll(".skill");
-for (let skill of skills) {
-  skill.addEventListener("mouseover", (e) => {
-    e.currentTarget.lastChild.previousSibling.innerHTML =
-      "&#8212; Discuss Now &#8212;";
-  });
-  skill.addEventListener("mouseout", (e) => {
-    e.currentTarget.lastChild.previousSibling.innerHTML = "&#8212; &#8212;";
-  });
-}

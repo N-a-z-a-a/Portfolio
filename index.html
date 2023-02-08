@@ -27,10 +27,10 @@
         <div class="hamburger" id="mobile-menu">=</div>
         <div class="menu flex">
           <ul class="menu-list flex center align-center">
-            <li class="menu-items"><a href="#">About</a></li>
-            <li class="menu-items"><a href="#">Services</a></li>
-            <li class="menu-items"><a href="#">Works</a></li>
-            <li class="menu-items"><a href="#">Contact</a></li>
+            <li class="menu-items"><a href="#about">About</a></li>
+            <li class="menu-items"><a href="#services">Services</a></li>
+            <li class="menu-items"><a href="#work">Works</a></li>
+            <li class="menu-items"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +41,7 @@
             <span class="joy">Joy</span><br /><span>Edwin-Ezeh</span>
           </h1>
           <p class="second">
-            <span class="p">P: (+234) 813 455 4928</span><br />
+            <span class="p">P: <a href="tel:08134554928">(+234) 813 455 4928</a></span><br />
             <span class="e">E: jedwin.ezeh@gmail.com</span>
           </p>
         </div>
@@ -62,12 +62,12 @@
             modi aperiam non earum neque inventore ad,
           </p>
           <p class="spans">
-            <span class="p">P: (+234) 813 455 4928</span><br />
-            <span class="e">E: jedwin.ezeh@gmail.com</span>
+            <span class="p">P: <a href="tel:08134554928">(+234) 813 455 4928</a></span><br />
+            <span class="e">E: <a href="mailto:jedwin.ezeh@gmail.com">jedwin.ezeh@gmail.com</a></span>
           </p>
         </div>
       </header>
-      <section class="first">
+      <section class="first" id="about">
         <div class="sec-1">
           <div class="about">
             <span>About Me</span>
@@ -92,12 +92,14 @@
           <h2 class="query">Any type of query & discussion.</h2>
           <p class="talk">Let's talk with me</p>
           <div class="contact">
-            <p>jedwin.ezeh@gmail.com</p>
-            <span class="arrow">&#8594</span>
+            <p class="transparent"><a href="mailto:jedwin.ezeh@gmail.com" class="transparent">jedwin.ezeh@gmail.com</a></p>
+            <span class="arrow transparent">
+              <a href="#form" class="transparent">&#8594</a>
+            </span>
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <span class="span">Services</span>
         <h2 class="do">what I do?</h2>
         <div class="skills">
@@ -105,19 +107,19 @@
             <i class="fa fa-laptop" aria-hidden="true" style="font-size: 70px;"></i>
             <h3>WordPress Development</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, quo laborum. </p>
-            <p class="dash1">&#8212; &#8212;</p>
+            <p class="dash1" id="dash"><a href='#form' class="transparent"> &#8212; Discuss Now &#8212;</a></p>
           </div>
           <div class="software skill">
             <i class="fa fa-code" aria-hidden="true" style="font-size: 70px;"></i>
             <h3>Software Development</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, quo laborum. </p>
-            <p class="dash2">&#8212; &#8212;</p>
+            <p class="dash2" id="dash"><a href='#form' class="transparent"> &#8212; Discuss Now &#8212;</a></p>
           </div>
           <div class="webflow skill">
             <i class="fa fa-code-fork" aria-hidden="true" style="font-size: 70px;"></i>
             <h3>WebFlow Development</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, quo laborum. </p>
-            <p class="dash3">&#8212; &#8212;</p>
+            <p class="dash3" id="dash"><a href='#form' class="transparent"> &#8212; Discuss Now &#8212;</a></p>
           </div>
         </div>
       </section>
@@ -147,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="services portfolio">
+      <section class="services portfolio" id="work">
         <div class="get-estimate">
           <div>
             <h3 class="transparent span">estimate your project</h3>
@@ -211,7 +213,7 @@
           </div>
         </div>
       </section>
-      <footer class="services contact">
+      <footer class="services contact" id="contact">
         <div class="logo logo-footer">JE.</div>
         <div class="house transparent">
           <div class="details transparent">
@@ -221,21 +223,25 @@
               <i class="fa fa-coffee" aria-hidden="true"></i>
               <div>
                 <h3 class="transparent">Get me here</h3>
-                <span class='transparent'>Mpape, Abuja, Nigeria</span>
+                <span class='transparent'>
+                  <a href="https://goo.gl/maps/VgLDJ5BFLewRf7ND8" class="transparent mail">Mpape, Abuja, Nigeria</a>
+                </span>
               </div>
             </div>
             <div class="box">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               <div>
                 <h3 class="transparent">Mail me here</h3>
-                <span class='transparent' style="text-transform: none;">jedwin.ezeh@gmail.com</span>
+                <span class='transparent' style="text-transform: none;">
+                  <a href="mailto:jedwin.ezeh@gmail.com" class="transparent mail">jedwin.ezeh@gmail.com</a>
+                </span>
               </div>
             </div>
           </div>
           <div class="mail">
             <h3 class="span transparent">Estimate project</h3>
             <h2 class="do talk transparent">Let me know here</h2>
-            <div class="form">
+            <div class="form" id="form">
               <form action="">
                 <input type="text" name="" id="" placeholder="Enter Your Name Here">
                 <input type="text" name="" id="" placeholder="Enter Your Email Here">
