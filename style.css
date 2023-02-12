@@ -535,9 +535,12 @@ textarea {
   background-color: #363636;
 }
 
-input[type="text"]:focus,
-textarea:focus {
-  border: 1px solid #eb6e51;
+.input:focus-visible {
+  outline: 1px solid #eb6e51;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }
 
 .submit {
@@ -556,7 +559,9 @@ textarea:focus {
   color: #eb6e51;
 }
 
-.error {
+.name-error,
+.email-error,
+.message-error {
   padding: 0;
   background: transparent;
   font-size: 14px;

@@ -28,61 +28,69 @@ window.onclick = function (e) {
 
 const form = document.getElementById("form");
 const nameField = document.getElementById("name");
-const error = document.querySelector(".error");
-console.log(error);
+const emailField = document.getElementById("email");
+const messageField = document.getElementById("message");
+const nameError = document.querySelector(".name-error");
+const emailError = document.querySelector(".email-error");
+const messageError = document.querySelector(".message-error");
 
-nameField.addEventListener("input", (e) => {
+nameField.addEventListener("input", () => {
   if (nameField.validity.valid) {
-    error.textContent = "";
+    nameError.textContent = "";
+  } else {
+    showNameError();
+  }
+});
+
+emailField.addEventListener("input", () => {
+  if (emailError.validity.valid) {
+    emailError.textContent = "";
   } else {
     showError();
   }
 });
 
-function showError() {
+messageField.addEventListener("input", () => {
+  if (messageField.validity.valid) {
+    messageError.textContent = "";
+  } else {
+    showNameError();
+  }
+});
+
+function showNameError() {
   if (nameField.validity.valueMissing) {
-    console.log(nameField.validity);
-    error.textContent = "You need to enter your full name.";
+    nameError.textContent = "You need to enter your full name.";
+  }
+}
+
+function showEmailError() {
+  if (emailField.validity.valueMissing) {
+    emailError.textContent = "You need to enter your email address";
+  } else if (emailField.validity.typeMismatch) {
+    emailError.textContent = "Value entered has to be an email address";
+  } else if (emailField.validity.tooShort) {
+    emailError.textContent = `Email should be at least ${emailField.minLength} characters. You entered ${emailField.value.length}.`;
+  }
+}
+
+function showMessageError() {
+  if (messageField.validity.valueMissing) {
+    messageError.textContent = "What is your enquiry?";
   }
 }
 
 form.addEventListener("submit", (e) => {
   if (!nameField.validity.valid) {
-    showError();
-    preventDefault();
+    showNameError();
+    e.preventDefault();
+  }
+  if (!emailField.validity.valid) {
+    showEmailError();
+    e.preventDefault();
+  }
+  if (!messageField.validity.valid) {
+    showMessageError();
+    e.preventDefault();
   }
 });
-
-email.addEventListener("input", (event) => {
-  // Each time the user types something, we check if the
-  // form fields are valid.
-
-  if (email.validity.valid) {
-    // In case there is an error message visible, if the field
-    // is valid, we remove the error message.
-    emailError.textContent = ""; // Reset the content of the message
-    emailError.className = "error"; // Reset the visual state of the message
-  } else {
-    // If there is still an error, show the correct error
-    showError();
-  }
-});
-
-function showError() {
-  if (email.validity.valueMissing) {
-    // If the field is empty,
-    // display the following error message.
-    emailError.textContent = "You need to enter an email address.";
-  } else if (email.validity.typeMismatch) {
-    // If the field doesn't contain an email address,
-    // display the following error message.
-    emailError.textContent = "Entered value needs to be an email address.";
-  } else if (email.validity.tooShort) {
-    // If the data is too short,
-    // display the following error message.
-    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
-  }
-
-  // Set the styling appropriately
-  emailError.className = "error active";
-}
