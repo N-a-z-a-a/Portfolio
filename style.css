@@ -548,10 +548,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+textarea:-webkit-autofill:focus {
   border: 1px solid #eb6e51;
   -webkit-text-fill-color: #fff;
   transition: background-color 5000s ease-in-out 0s;
@@ -623,7 +620,6 @@ select:-webkit-autofill:focus {
   }
 
   .tech {
-    /* padding: 0; */
     width: 100%;
     padding-top: 30px;
     padding-left: 15px;
@@ -702,18 +698,9 @@ select:-webkit-autofill:focus {
     padding: 15px;
   }
 
-  /* .name > span {
-    font-size: 50px;
-  } */
-
   .joy {
     margin-left: 0;
   }
-
-  /* .image {
-    margin-left: 15px;
-    margin-top: -145px;
-  } */
 
   .deets {
     width: 100%;
