@@ -535,6 +535,11 @@ textarea {
   background-color: #363636;
 }
 
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid #eb6e51;
+}
+
 .submit {
   width: 40%;
   padding: 20px 10px;
@@ -549,6 +554,14 @@ textarea {
 
 .mail:hover {
   color: #eb6e51;
+}
+
+.error {
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #ff000085;
+  font-weight: 800;
 }
 
 @media (max-width: 320px) {

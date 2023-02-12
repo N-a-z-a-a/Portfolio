@@ -34,7 +34,7 @@
           </ul>
         </div>
       </nav>
-      <header class="">
+      <header>
         <div>
 
           <h1 class="name">
@@ -46,7 +46,7 @@
           </p>
         </div>
         <div>
-          <img src="Image.png" alt="" width="100%" class="image" />
+          <img src="assets/Image.png" alt="photo of Joy" width="100%" class="image" />
         </div>
         <div class="deets">
           <div class="con about">
@@ -128,23 +128,23 @@
         <h2 class="do">coolest ever</h2>
         <div class="tech-stack">
           <div class="html5">
-            <div class="html">80%</div>
+            <img src="assets/wordpress-logo.png" alt="wordpress logo" class="html"/>
             <span>WordPress</span>
           </div>
           <div class="html5">
-            <div class="html">80%</div>
+            <img src="assets/JS.png" class="html"/>
             <span>Javascript</span>
           </div>
           <div class="html5">
-            <div class="html">80%</div>
+            <img src="assets/react-logo.png" alt='react-logo' class="html"/>
             <span>ReactJS</span>
           </div>
           <div class="html5">
-            <div class="html">80%</div>
+            <img src="assets/ts-logo.png" alt="typescript logo" class="html"/>
             <span>TypeScript</span>
           </div>
           <div class="html5">
-            <div class="html">80%</div>
+            <img src="assets/webflow.png" alt="webflow logo" class="html"/>
             <span>Webflow</span>
           </div>
         </div>
@@ -163,7 +163,7 @@
         </div>
         <div class="works">
           <div class="work">
-            <img src="DaveSellsPVD.jpg" alt="">
+            <img src="assets/DaveSellsPVD.jpg" alt="image of Dave Sells PVD website">
             <p class="description">A real estate website that brings realtors, agents and their customers together. House listings are uploaded oon the website, and customers can take virtual tours of the house and see every detail of the house</p>
             <div class="info">
               <div class="tools">
@@ -175,7 +175,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="MannyAsika.jpg" alt="">
+            <img src="assets/MannyAsika.jpg" alt="image of Manny Asika website">
             <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius sunt vero adipisci necessitatibus eligendi error, sequi quos repudiandae voluptates vel libero recusandae quaerat fugiat quae rerum explicabo et distinctio possimus!</p>
             <div class="info">
               <div class="tools">
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="NPM.jpg" alt="">
+            <img src="assets/NPM.jpg" alt="image of NPM website">
             <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur odio amet esse itaque et a possimus illum, eos enim tempore distinctio debitis, qui iste ut? Assumenda doloribus accusantium debitis eligendi.</p>
             <div class="info">
               <div class="tools">
@@ -200,7 +200,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="PremiereRoofing.jpg" alt="">
+            <img src="assets/PremiereRoofing.jpg" alt="image of Premiere Roofing website">
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam sint beatae cumque impedit illum id dignissimos repellat. Similique illo placeat eligendi veniam cumque temporibus esse dicta, unde saepe nihil!</p>
             <div class="info">
               <div class="tools">
@@ -242,10 +242,12 @@
             <h3 class="span transparent">Estimate project</h3>
             <h2 class="do talk transparent">Let me know here</h2>
             <div class="form" id="form">
-              <form action="">
-                <input type="text" name="" id="" placeholder="Enter Your Name Here">
-                <input type="text" name="" id="" placeholder="Enter Your Email Here">
-                <textarea name="" id="" cols="30" rows="7" placeholder="Tell Me The Details About Your Project"></textarea>
+              <form action="" novalidate id="form">
+                <span class="error"></span>
+                <input type="text" name="" id="name" placeholder="Enter Your Name Here" required>
+                <input type="text" name="" id="email" placeholder="Enter Your Email Here">
+                <textarea name="" id="message" cols="30" rows="7" placeholder="Tell Me The Details About Your Project"></textarea>
+                <button class="submit">Submit</button>
                 <input type="submit" value="Get A Quote" class="submit">
               </form>
             </div>
